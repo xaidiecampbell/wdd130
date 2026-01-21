@@ -1,18 +1,27 @@
+:root {
+    --background-color: rgb(167, 157, 234);
+    --heading-text-color: black;
+    --heading-font: 'Montserrat'
+        --padding: 10px;
+    --border: 1px solid black;
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--background-color);
+    padding: var(--padding);
     text-align: center;
+    border: var(--border);
 }
 
 nav a {
-    color: white;
+    color: rgb(224, 19, 19);
     display: block;
     padding: 20px;
     text-align: center;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--background-color);
 }
 
 img {
@@ -30,8 +39,7 @@ p {
 main {
     max-width: 800px;
     height: auto;
-    border: 1px solid black;
-    padding: 10px;
+    border: var(--border) padding: 10px;
     box-shadow: 0 0 30px #333;
 }
 
