@@ -1,9 +1,16 @@
 :root {
     --background-color: rgb(167, 157, 234);
     --heading-text-color: black;
-    --heading-font: 'Montserrat'
-        --padding: 10px;
+    --heading-font: 'Montserrat';
+    --padding: 10px;
     --border: 1px solid black;
+    --font-size: 27;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
 
 nav {
@@ -24,28 +31,23 @@ h1 {
     color: var(--background-color);
 }
 
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-p {
-    padding: 0px;
+*p {
+    /* padding: 20px; */
 }
 
 main {
     max-width: 800px;
-    height: auto;
-    border: var(--border) padding: 10px;
+    height: 400px;
+    border: var(--border);
+    padding: 10px;
     box-shadow: 0 0 30px #333;
 }
 
 aside {
     max-width: 400px;
     text-align: center;
+    z-index: 1;
+    position: relative;
     margin: 10px;
     border: 1px solid black;
     padding: 10px;
@@ -53,13 +55,34 @@ aside {
     color: #333;
 }
 
-aside img {
-    max-width: 200px;
-    height: auto;
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+    transform: translate(-50%, -50%);
 }
 
+img {
+    width: 500px;
+    height: auto;
+    border: 1px solid black;
+    /* padding: 2px; */
+    box-shadow: 0 0 30px gray;
+    position: relative;
+}
+
+/* image of boston */
+aside img {
+    max-width: 300px;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+
+/* image of me */
 main img {
-    width: 150px;
+    float: right;
+    width: 400px;
     height: auto;
     border: 1px solid black;
     padding: 10px;
@@ -70,4 +93,13 @@ footer {
     margin-top: 15px;
     border-top: 1px solid black;
     text-align: center;
+}
+
+/* class selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000
 }
