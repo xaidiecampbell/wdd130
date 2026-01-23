@@ -80,7 +80,7 @@ p {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -91,7 +91,7 @@ h1 {
     color: rgb(22, 18, 18);
 }
 
-article {
+.hero article {
     position: absolute;
     top: 400px;
     width: 95%;
