@@ -7,6 +7,12 @@
     --font-size: 27;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px margin: 0 auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +20,22 @@
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
     background-color: var(--background-color);
     padding: var(--padding);
     text-align: center;
     border: var(--border);
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 nav a {
+
     color: rgb(224, 19, 19);
     display: block;
     padding: 20px;
@@ -29,22 +44,24 @@ nav a {
 
 h1 {
     color: var(--background-color);
+    border-bottom: #000 solid 1px;
 }
 
 *p {
-    /* padding: 20px; */
+    flex-flow: row;
 }
 
 main {
-    max-width: 800px;
+    grid-column: 2/2;
     height: 400px;
     border: var(--border);
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 30px #333;
 }
 
 aside {
     max-width: 400px;
+    height: 400px;
     text-align: center;
     z-index: 1;
     position: relative;
@@ -53,6 +70,8 @@ aside {
     padding: 10px;
     background-color: #eee;
     color: #333;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside h2 {
@@ -82,7 +101,7 @@ aside img {
 /* image of me */
 main img {
     float: right;
-    width: 400px;
+    width: 200px;
     height: auto;
     border: 1px solid black;
     padding: 10px;
@@ -90,7 +109,7 @@ main img {
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: 25px;
     border-top: 1px solid black;
     text-align: center;
 }
