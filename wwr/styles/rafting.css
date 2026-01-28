@@ -50,7 +50,6 @@ section figure {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -75,6 +74,7 @@ nav,
 section,
 article {
 
+    /* display: flex; */
     margin: 16px;
     padding: 8px;
     width: 100%;
@@ -82,7 +82,7 @@ article {
     text-align: center;
     background-color: var(--secondary-color);
     color: rgb(22, 3, 3);
-    justify-items: flex-end;
+    /* justify-items: flex-end; */
 }
 
 p {
@@ -95,14 +95,14 @@ p {
     color: rgb(7, 1, 1);
 }
 
-.socialmedia a {
+.socialmedia img {
     width: 30px;
     height: auto;
     text-decoration: none;
     display: flex;
-    justify-items: end;
-    align-items: center;
-    gap: 5px;
+    justify-content: flex-end;
+    /* align-items: right; */
+    gap: 15px;
 
 }
 
