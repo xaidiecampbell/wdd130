@@ -4,7 +4,7 @@
     --primary-color: rgb(36, 57, 46);
     --secondary-color: rgb(111, 155, 237);
     --accent1-color: rgb(222, 230, 220);
-    --accent2-color: rgb(221, 139, 17);
+    --accent2-color: rgb(221, 48, 17);
     --heading-font: Montserrat;
     --body-font: helvetica;
 }
@@ -28,9 +28,40 @@ footer {
 }
 
 h1,
+{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+align-items: center;
+}
+
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    display: grid;
+    grid-column: 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 2;
+
+}
+
+section ul {
+    display: grid;
+    grid-template-columns: repaeat(5, 1fr);
+    grid-row: repeat(2, auto);
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section ul li img {
+    width: 150px;
+    height: auto;
 }
 
 /* h2 {
@@ -47,6 +78,7 @@ h2 {
 nav,
 section,
 article {
+
     margin: 16px;
     padding: 8px;
     width: 100%;
@@ -54,20 +86,28 @@ article {
     text-align: center;
     background-color: var(--secondary-color);
     color: rgb(22, 3, 3);
+    justify-items: flex-end;
 }
 
 p {
     margin: 16px;
     padding: 8px;
-    width: 100%;
+    width: 95%;
     padding: 16px;
     text-align: center;
     background-color: white;
     color: rgb(7, 1, 1);
 }
 
-.socialmedia a {
+.socialmedia img {
+    width: 30px;
+    height: auto;
     text-decoration: none;
+    display: flex;
+    justify-items: end;
+    align-items: right;
+    gap: 5px;
+
 }
 
 .hero {
@@ -95,7 +135,7 @@ p {
     position: absolute;
     top: 400px;
     width: 95%;
-    padding: 16px;
+    padding: 5px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
@@ -106,3 +146,12 @@ p {
     float: right;
     width: 125px;
 }
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    list-style: none;
+}
+
+footer {}
