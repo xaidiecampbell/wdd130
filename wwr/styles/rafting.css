@@ -50,9 +50,6 @@ section figure {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-section figure {
     display: flex;
     justify-content: center;
     align-items: center;
