@@ -106,7 +106,9 @@ p {
 
 }
 
-.socialmedia a {}
+.socialmedia a {
+    text-decoration: none;
+}
 
 .hero {
     position: relative;
@@ -152,4 +154,6 @@ ul {
     list-style: none;
 }
 
-footer {}
+footer a {
+    text-decoration: none;
+}
