@@ -27,22 +27,22 @@ footer {
     margin: 0 auto;
 }
 
-h1 {
+/* h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-}
+} */
 
-h2 {
+/* h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-row: 2;
+    grid-row: 2; */
 
 }
 
-section figure {
+section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -52,6 +52,11 @@ section figure {
     margin: 0;
     justify-content: center;
     align-items: center;
+}
+
+section figure {
+    margin: 0;
+    text-align: center;
 }
 
 section figure img {
