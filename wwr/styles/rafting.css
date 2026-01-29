@@ -40,12 +40,12 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     grid-row: 2; */
 
-}
+/* } */
 
 section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: auto auto;
     gap: 1rem;
     list-style: none;
     padding: 0;
@@ -55,8 +55,10 @@ section {
 }
 
 section figure {
+    grid-column: 1/-1;
     margin: 0;
     text-align: center;
+    justify-content: center;
 }
 
 section figure img {
