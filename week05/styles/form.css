@@ -1,0 +1,30 @@
+/* created by Xaidie Campbell
+February 3 2026 */
+/* This is practice styling a table */
+
+form {
+    margin: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 3px solid black;
+    padding: 30px 30px;
+    background-color: rgb(233, 180, 226);
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    size: 25px 25px 25px 25px;
+    background-color: rgb(18, 235, 33);
+    text-align: center;
+}
+
+header {
+    margin: 10px;
+    border: 5px solid black;
+    padding: 25px;
+    background-color: rgb(233, 180, 226);
+    box-sizing: border-box;
+    text-align: center;
+}

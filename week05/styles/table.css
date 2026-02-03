@@ -1,0 +1,23 @@
+/* created by Xaidie Campbell
+February 3 2026 */
+/* This is practice styling a table */
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(236, 20, 20);
+    letter-spacing: 1px;
+}
+
+th,
+td {
+    border: 1px solid rgb(110, 15, 236);
+    padding: 8px 12px;
+    text-align: center;
+}
+
+thead th,
+tfoot tr {
+    background-color: grb(0 0 0);
+    color: black;
+    font-weight: 700;
+}
