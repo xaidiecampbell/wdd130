@@ -43,10 +43,9 @@ footer {
 
 form {
     display: grid;
-
-    grid-template-rows: repeat(2 auto);
+    grid-template-rows: repeat(2, auto);
     max-width: 400px;
-    margin: 10 auto;
+    margin: 10px auto;
     padding: 15px;
     background-color: rgb(111, 155, 237);
     border: 1px solid black;
@@ -55,7 +54,6 @@ form {
 
 button {
     max-width: 70%;
-    background-color: (--accent2-color);
 }
 
 section {
@@ -196,4 +194,10 @@ footer a {
 .employees figure img {
     width: 200px;
     height: auto;
+}
+
+iframe {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 1rem;
 }
