@@ -7,12 +7,26 @@
     --accent2-color: rgb(221, 48, 17);
     --heading-font: Montserrat;
     --body-font: helvetica;
+    --font-family: helvetica;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} */
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    color: rgb(36, 57, 46);
+}
+
+h2,
+h3 {
+    text-align: center;
+    padding: 1rem;
+    color: rgb(36, 57, 46);
 }
 
 body {
@@ -27,20 +41,22 @@ footer {
     margin: 0 auto;
 }
 
-/* h1 {
+form {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-} */
 
-/* h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-row: 2; */
+    grid-template-rows: repeat(2 auto);
+    max-width: 400px;
+    margin: 10 auto;
+    padding: 15px;
+    background-color: rgb(111, 155, 237);
+    border: 1px solid black;
+    text-align: left;
+}
 
-/* } */
+button {
+    max-width: 70%;
+    background-color: (--accent2-color);
+}
 
 section {
     display: grid;
@@ -65,17 +81,6 @@ section figure img {
     width: 150px;
     height: auto;
 }
-
-/* h2 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: white;
-} */
 
 nav,
 section,
@@ -111,10 +116,6 @@ p {
     /* align-items: right; */
     gap: 15px;
 
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -162,5 +163,37 @@ ul {
 }
 
 footer a {
+    padding: 25px;
+    float: right;
     text-decoration: none;
+}
+
+.socialmedia a {
+    padding: 25px;
+    text-decoration: none;
+}
+
+.employees {
+    max-width: 840px;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 3;
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    margin: 16px;
+    padding: 8px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    color: var(--accent1-color);
+}
+
+.employees figure img {
+    width: 200px;
+    height: auto;
 }
