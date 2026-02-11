@@ -5,16 +5,10 @@
     --secondary-color: rgb(111, 155, 237);
     --accent1-color: rgb(222, 230, 220);
     --accent2-color: rgb(221, 48, 17);
-    --heading-font: Montserrat;
-    --body-font: helvetica;
-    --font-family: helvetica;
-}
+    --heading-font: Montserrat, sans-serif;
+    --body-font: helvetica, sans-serif;
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+}
 
 h1 {
     text-align: center;
@@ -32,19 +26,44 @@ h3 {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    margin: 0;
 }
 
 header,
 main,
-footer {
+footer,
+section {
     width: 840px;
     margin: 0 auto;
+}
+
+main img {
+    padding: auto;
+    margin: 10px solid rgb(36, 57, 46);
+    border: 1px solid black;
+}
+
+main img {
+    padding: auto;
+    margin: 10px solid;
+}
+
+.newsletter form {
+
+    /* display: grid; */
+    /* grid-template-rows: repeat(2, auto); */
+    max-width: 90%;
+    margin: 10px 300px;
+    gap: 1rem;
+    display: grid;
+    justify-content: center;
+
 }
 
 form {
     display: grid;
     grid-template-rows: repeat(2, auto);
-    max-width: 600px;
+    max-width: 840px;
     margin: 10px auto;
     padding: 15px;
     background-color: rgb(111, 155, 237);
@@ -76,7 +95,7 @@ section figure {
 }
 
 section figure img {
-    width: 150px;
+    width: 130px;
     height: auto;
 }
 
@@ -85,14 +104,65 @@ section,
 article {
 
     /* display: flex; */
-    margin: 16px;
+    margin: 16px auto;
     padding: 8px;
-    width: 100%;
+    /* width: 100%; */
     padding: 16px;
     text-align: center;
     background-color: var(--secondary-color);
     color: rgb(22, 3, 3);
     /* justify-items: flex-end; */
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-rows: repeat(3 auto);
+    gap: 40px:
+}
+
+.trip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+button booking {
+    size-adjust: var(--accent1-color)400px;
+}
+
+.trip img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.trip:nth-child(5) img {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.trip:nth-child(5) .trip-text {
+    grid-column: 2;
+    grid-row: 2;
+    justify-items: center;
+}
+
+table {
+    background-color: rgb(111, 155, 237);
+    text-align: center;
+    text-decoration: solid black;
+}
+
+section h2 {
+    grid-column: 1/2;
+}
+
+section p {
+    grid-column: 2/-1;
+    /* width: 95%; */
+    background-color: rgb(111, 155, 237);
+    font-size: 1.5rem;
 }
 
 p {
@@ -110,8 +180,8 @@ p {
     height: auto;
     text-decoration: none;
     display: flex;
-    justify-content: flex-end;
-    /* align-items: right; */
+    justify-content: space-between;
+    align-items: right;
     gap: 15px;
 
 }
@@ -122,15 +192,15 @@ p {
 
 .hero img {
     display: block;
-    width: 100%;
+    width: 840px;
     height: auto;
 }
 
 .hero h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
-    padding: 16px;
+    width: 827px;
+    padding: 8px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent2-color);
@@ -140,8 +210,8 @@ p {
 .hero article {
     position: absolute;
     top: 400px;
-    width: 95%;
-    padding: 5px;
+    width: 750px;
+    padding: 4px 10px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
@@ -169,6 +239,25 @@ footer a {
 .socialmedia a {
     padding: 25px;
     text-decoration: none;
+}
+
+.purposes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.purposes div:first-child {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.purposes > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .employees {
